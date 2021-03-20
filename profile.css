@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  color: white;
+  background: darkkhaki;
+  position: relative;
+  font-size: 72px;
+  font-family: 'Lato';
+}
+
+.css-typing div {
+  border-right: 6px solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  margin-top: -112px;
+}
+
+.css-typing div:nth-child(1) {
+  width: 478px;
+  margin: 12px 0;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing div:nth-child(2) {
+  width: 830px;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
+  animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 6px solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 6px solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+
+/*-------------------
+* Social Icon
+*-------------------*/
+
+ul {
+  width: 100%;
+  z-index: 1;
+}
+
+.social-icon {
+  position: absolute;
+  top: 10%;
+  display: block;
+}
+
+.social-icon li {
+  display : inline-block;
+  margin  : 0 2px;
+}
+
+.social-icon li a {
+  display       : block;
+  font-size     : 80px;
+  color         : white;
+  width         : 112px;
+  height        : 112px;
+  line-height   : 33px;
+  text-align    : center;
+  border-radius : 2px;
+  border        : 2px solid #eeeeee;
+}
+
+.upwork-icon {
+  height: 80px;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1114px) {
+  .main-container {
+    font-size: 48px;
+  }
+
+  .css-typing div:nth-child(1) {
+    width: 318px;
+  }
+
+  .css-typing div:nth-child(2) {
+    width: 555px;
+  }
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 768) {
+  .social-icon {
+    top: 30%;
+  }
+}
